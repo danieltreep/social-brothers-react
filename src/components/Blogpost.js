@@ -9,7 +9,7 @@ export default function Blogpost(props) {
     return (
         <article className="blogpost">
             <header className="blogpostHeader">
-                <img src={props.img_url} alt='blogpost header'></img>
+                <img src={`https://frontend-case-api.sbdev.nl/storage/${props.img_url}`} alt='blogpost header'></img>
                 <p><time dateTime={props.created_at}>{day}-{month}-{year}</time></p>
                 <p>{props.category.name}</p>
             </header>

@@ -42,7 +42,7 @@ p {
     position: relative;
 }
 .mainHeader::before,
-.blogpostHeader::before {
+.blogpostHeader::after {
     content: '';
     background-color: #000000;
     opacity: .4;
@@ -167,10 +167,6 @@ button {
     overflow: hidden;
 }
 .blogpostHeader {
-    background-image: url('./images/background.png');
-    background-position: left;
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 70px;
     display: flex;
     justify-content: space-between;
@@ -178,9 +174,10 @@ button {
     position: relative;
 }
 .blogpostHeader img {
+    height: 100%;
+    width: 100%;
     position: absolute;
     top: 0;
-    left: 0;
 }
 .blogpostHeader p{
     color: white;
