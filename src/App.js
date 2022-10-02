@@ -12,7 +12,7 @@ function App() {
   return (
       <Router>
         <Routes>
-          <Route exact path='/' element={<HomePage />} />
+          <Route exact path='/social-brothers-react' element={<HomePage />} />
           <Route exact path='/blog-archief.html' element={<BlogPage />} />
         </Routes>  
       </Router>

@@ -42,15 +42,13 @@ export default function Form() {
         .then(result => console.log(result))
         .catch(error => console.log('error', error))
         .finally(() => {
-            alert('Uw blogpost is geupload.')
+            alert('Uw blogpost is geupload.');
             title.value = '';
             content.value = '';
             category.value = 'Geen categorie';
         })
         
         e.preventDefault();
-
-        
     }    
     
     return (
